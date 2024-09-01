@@ -55,14 +55,22 @@ class ContadorDePalabras
   end
   
 
+
+
+ 
+
+
+ 
+
   #prueba 2
     
 
   texto1 = "Este es un ejemplo de texto con palabras repetidas. Este texto es solo un ejemplo. Veremos que pasa"
   contador1 = ContadorDePalabras.new(texto1)
-  
+  puts contador1.contarPalabrasRepetidas
   texto2 = "Nuevo texto con nuevas palabras repetidas. Nuevo texto repetido. Texto dos para crear desync"
   contador2 = ContadorDePalabras.new(texto2)
+  puts contador2.contarPalabrasRepetidas
   
   # Usando el método to_s para saber de dónde vienen los objetos
   puts contador1.to_s
