@@ -55,9 +55,10 @@ class ContadorDePalabras
   end
   
 
-  
+  #prueba 2
+    
 
-  texto1 = "Este es un ejemplo de texto con palabras repetidas. Este texto es solo un ejemplo."
+  texto1 = "Este es un ejemplo de texto con palabras repetidas. Este texto es solo un ejemplo. Veremos que pasa"
   contador1 = ContadorDePalabras.new(texto1)
   
   texto2 = "Nuevo texto con nuevas palabras repetidas. Nuevo texto repetido."
