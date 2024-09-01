@@ -48,14 +48,21 @@ class ContadorDePalabras
       # Devuelve el hash `palabras_repetidas`, que contiene las palabras repetidas y su número de apariciones.
       palabras_repetidas
     end
+
+    def to_s
+        "Objeto ContadorDePalabras inicializado con el texto: '#{@texto}'"
+    end
   end
   
 
   
 
-  texto = "Este es un ejemplo de texto con palabras repetidas. Este texto es solo un ejemplo."
+  texto1 = "Este es un ejemplo de texto con palabras repetidas. Este texto es solo un ejemplo."
+  contador1 = ContadorDePalabras.new(texto1)
   
-  contador = ContadorDePalabras.new(texto)
+  texto2 = "Nuevo texto con nuevas palabras repetidas. Nuevo texto repetido."
+  contador2 = ContadorDePalabras.new(texto2)
   
-  puts contador.contarPalabrasRepetidas
-  
+  # Usando el método to_s para saber de dónde vienen los objetos
+  puts contador1.to_s
+  puts contador2.to_s
