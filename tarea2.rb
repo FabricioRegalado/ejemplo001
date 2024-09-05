@@ -30,17 +30,24 @@ class ContadorDePalabras
 
     palabras_repetidas
   end
+
+  def to_s
+    "Objeto ContadorDePalabras inicializado con el texto: '#{@texto}'"
+  end
+
 end
 
-# Ejemplo de uso
+
 texto = "este es un txt de ejemplo, solo falta ver que es lo que nos devuelve este txt"
 texto2 = "carro2"
 texto3 = "bicicleta1"
 
-# Ejemplo de uso
-contador = ContadorDePalabras.new(texto)
-puts contador.contarPalabrasRepetidas
 
-# Modificando el texto
-contador.modificar_texto("Nuevo texto repetido. Nuevo texto repetido.")
-puts contador.contarPalabrasRepetidas
+contador1 = ContadorDePalabras.new(texto)
+puts contador1.contarPalabrasRepetidas
+
+texto2 = "Nuevo texto palabras repetidas. Nuevo texto palabras repetidas."
+contador2 = ContadorDePalabras.new(texto2)
+
+puts contador1.to_s
+puts contador2.to_s
